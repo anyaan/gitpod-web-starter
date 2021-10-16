@@ -1,8 +1,14 @@
-let number = document.getElementById("num")
-function greet() {
-  let current=Number.parseInt(number.textContent);
-  document.write(current);
-  number.textContent=current++;
+let number = 1
+let startButton=document.getElementById("start")
+let hyouji=document.getElementById("num")
+function tick() {
+  hyouji.textContent=number;
+  // document.write(number)
+  // document.write("yobi");
+  number++;
 }
+function start(){
+  setInterval(tick, 1000);
 
-setInterval(greet, 1000);
+}
+startButton.onclick=start;
