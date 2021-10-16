@@ -1,4 +1,4 @@
-let age=30
+let age=12
 if(age<18){
   document.write("選挙権はありません");
 }else if(age<25){
